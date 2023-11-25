@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Undergraduate Programs
+    </title>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+          var button = document.getElementById("myButton");
+          var list = document.getElementById("myList");
+          list.style.display = "block";
+          button.insertAdjacentElement("afterend", list);
+        });
+      </script>
+      
+</head>
+
+<style>
+      body{
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    position: relative;
+    padding: 0;
+}
+.main-page-margin{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#header{
+ background-color:rgb(204, 176, 13); 
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ z-index: 1000;  
+}
+.container{
+ background-color:rgb(5, 5, 113); 
+ position: fixed;   
+ left: 0; 
+ width: 100%; 
+ z-index: 100; 
+ height:100px;
+ color: aliceblue;
+}
+
+.tab a{
+   margin-right: 60px;
+   color: aliceblue;
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:30;
+   
+  }
+ 
+ nav ul {
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+
+}
+li{
+ margin-left:5%;
+}
+a:hover{
+ color: blue;
+}
+
+#imge{
+ vertical-align:middle;
+ border-style:none;
+ margin-top:-159px;
+ margin-left:90%;
+}
+
+.section1{
+    position: relative;
+    height: 500px;
+}
+.video-container {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-bg-text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1em;
+    color: #fff;
+    text-align: left;
+   white-space: nowrap;
+
+}
+.overlay{
+    position: absolute;
+    top:0;
+   left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0,0.6);
+}
+.alphaText{
+    font-weight: bold;
+    position: absolute;
+    top: 12%;
+    right: 40%;
+    text-transform: uppercase;
+    transform: translate(50%,0);
+}
+
+.box-container{
+  
+  position: absolute;
+ top: 90%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+ 
+}
+b{
+  margin-top: auto;
+  color:rgb(204, 176, 13); 
+}
+
+.box-header {
+  bottom: 0;
+  left: 50%;
+  width: 230px;
+  height: 80px;
+ background-color:rgb(5, 5, 113); 
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+ justify-content: center;
+ align-items: center;
+ border-radius:50%;
+}
+.box-header:hover{
+  color:rgb(204, 176, 13);
+}
+
+.box-description {
+overflow: hidden;
+  width: 230px;
+  height: 180px;
+  text-decoration: none;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+  color: #2C2A58;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.box-description:hover{
+  color: rgb(63, 71, 168);
+}
+
+.box-link {
+  text-decoration:none;
+}  
+
+#myButton {
+  padding: 10px 20px;
+  background-color:rgb(5, 5, 113); ;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+#myList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fefefe;
+  padding: 10px;
+  border: 1px solid #888;
+  min-width: 150px;
+  width: 38%;
+}
+
+.css ul{
+    list-style-type:none;
+    margin-left: 3%;
+}
+.css{
+  margin-left:3%;
+}
+#dropdown-menu {
+  display: block;
+  position: absolute;
+  margin-left:50%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fefefe;
+  padding: 10px;
+  border: 1px solid #888;
+  min-width: 150px;
+  width: 38%;
+}
+
+#dropdown-menu li {
+  list-style-type: none;
+}
+
+#dropdown-menu ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+} 
+ 
+</style>
+<body>
+    <header  id="header"> 
+        <nav class="tab">
+          <ul>
+            <li><a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/index.html" margin-left="5px">HOME</a></li>
+            <li><a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/about.html#">ABOUT</a></li>
+            <li><a href="#faculty">FACULTY</a></li>
+            <li><a href="#research">RESEARCH GROUPS</a></li>
+            <li><a href="#news&events">NEWS & EVENTS</a></li>
+            <li><a href="search">SEARCH</a></li>
+          </ul>
+        </nav>
+      
+   
+    <div class="site branding">
+      <div class="container">
+        <div class="row">
+          <h1>Department of Computer Science</h1>
+          <h4>University of Ghana</h4>
+          <img id="imge" src="https://th.bing.com/th/id/OIP.XqEXNO_YpDO6ABK7lPr5kAHaGh?w=171&h=180&c=
+          7&r=0&o=5&dpr=1.1&pid=1.7"
+           height="100px", width="100px">
+        </div>
+      </div>
+    </header>
+    <div class="main-page-margin">
+    <section class="section1">
+    <div class="video-container">
+        <div class="overlay"></div>
+        <video class="video-bg" autoplay muted loop style="object-fit: cover" poster="index-poster.jpg">
+            <source src="https://dcs.ug.edu.gh/video-bg.mp4" type="video/mp4">
+            "Your browser does not support the video"
+        </video>
+        <div class="video-bg-text">
+            <p class="alphaText" >Your gateway to world class<br />computer Science Education</p>
+        </div>
+    </div>
+    <section class="box-container">
+        <div>
+            <a href="" class="box-link">
+                <div>
+                    <div class="box-header">Short Courses</div>
+                    <div class="box-description">Our eight week intensive certificate is open to senior high 
+                        school graduates, tertiary students, school graduates, workers and the general public.
+                         <br /> <br /><b>Read More</b>
+                        </div>
+                </div>
+            </a>
+        </div>
+       
+         <div>
+            <a href="" class="box-link">
+                <div class="box">
+                    <div class="box-header">Undergraduate programmes</div>
+                    <div class="box-description">Open the door to sought-after technology careers
+                         with a world-class Bachelor of Science in Computer Science degree.
+                         <br /> <br /><b>Read More</b>
+                        </div>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="" class="box-link">
+                <div >
+                    <div class="box-header">MPhil and Msc programmes.</div>
+                    <div class="box-description">Embrace world class graduate education
+                        with unique blend of cutting-edge research and industry experience.
+                          <b>Read More</b>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div >
+            <a href="" class="box-link">
+                <div >
+                    <div class="box-header">PhD programmes.</div>
+                    <div class="box-description">Our PHDs lead the effort to extend the boundaries of knowledge
+                         through quality and industry relevant research.
+                          <b>Read More</b>
+                        </div>
+                </div>
+            </a>
+        </div>
+ 
+ </section>
+    </section>
+    </div>
+    <div class="under-prog" style="text-align: center;">
+        <h1 style="margin-top:20%; color: #2C2A58;">Undergraduate Degree Programmes </h1>
+        <p>The Department offers two undergraduate degree programmes, Bachelor of Science in Computer Science Single-Major (3:2:1:1)
+             and Major-Minor (3:2:2:1) as well as Bachelor of Science in Information Technology.
+
+           <p> To qualify for admission into Computer Science programmes at Level 200, candidates must have taken the following courses
+             at Level 100:</p>
+            
+           <p> MATH 121: Algebra and Trigonometry
+            MATH 122: Calculus I CSCD 101: Introduction to Computer Science I
+            CSCD 102: Introduction to Computer Science II
+            Every student in the Department of Computer Science must own his or her laptop with minimum specification of:
+            </p>
+            i3 64-bit Processor<br>
+            8GB RAM
+            500GB HD or 256 SSD</p>
+            <div  style="color:rgb(5, 5, 113);font-size:25px;font-size:bold; margin-top: 5%; margin-bottom:5%;" > Undergraduate Courses</div>
+  </div>
+
+    <div class="css">  
+    <button id="myButton">Computer Science</button>
+    <ul id="myList" >
+      
+      <ul>
+       <h3><li style="color:rgb(5, 5, 113);">LEVEL 100<br>First Semester</li></h3>
+        <li>
+            UGRC 150UGRC 110&nbsp;&nbsp;&nbsp;&nbspCritical Thinking and Practical Reasoning<br>
+            MATH 121UGRC 110&nbsp;&nbsp;&nbsp;&nbspAlgebra and Trigonometry<br>
+            MATH 123UGRC 110&nbsp;&nbsp;&nbsp;&nbspVectors and Geometry<br>
+            DCIT 101UGRC 110&nbsp;&nbsp;&nbsp;&nbspIntroduction to Computer Science<br>
+            DCIT 103UGRC 110&nbsp;&nbsp;&nbsp;&nbspOffice Productivity Tools<br>
+            STAT 111UGRC 110&nbsp;&nbsp;&nbsp;&nbspIntroduction to Statistics and Probability I<br>
+        </li>
+          <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+        <li>
+            UGRC 1100&nbsp;&nbsp;&nbsp;Academic Writing I<br>
+            UGRC 131-1360&nbsp;&nbsp;&nbsp;Understanding Human Society<br>
+            MATH 1220&nbsp;&nbsp;&nbsp;Calculus I<br>
+            MATH 1260&nbsp;&nbsp;&nbsp;Algebra and Geometry<br>
+            STAT 1120&nbsp;&nbsp;&nbsp;Introduction to Statistics and Probability II<br>
+            DCIT 1040&nbsp;&nbsp;&nbsp;Programming<br>
+            DCIT 1020&nbsp;&nbsp;&nbsp;Computer Hardware Fund. and Circuits<br>
+            </li>
+        <h3><li style="color:rgb(5, 5, 113);">LEVEL 200<br>First Semester</li></h3>
+        <li>
+          UGRC 210&nbsp;&nbsp;&nbsp;&nbsp;Academic Writing II<br>
+          DCIT 201&nbsp;&nbsp;&nbsp;&nbsp;Programming I<br>
+          DCIT 203&nbsp;&nbsp;&nbsp;&nbsp;Digital and Logic Systems Design<br>
+          DCIT 205&nbsp;&nbsp;&nbsp;&nbsp;Multi Media and Web Design<br>
+          DCIT 207&nbsp;&nbsp;&nbsp;&nbsp;Computer Architecture & Organisation<br>
+          MATH 223&nbsp;&nbsp;&nbsp;&nbsp;Calculus II<br>
+        </li>
+        <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+        <li>
+          UGRC 220&nbsp;&nbsp;&nbsp;&nbsp;Introduction to African Studies<br>
+          DCIT 202&nbsp;&nbsp;&nbsp;&nbsp;Mobile Application Development<br>
+          DCIT 204&nbsp;&nbsp;&nbsp;&nbsp;Data Structures & Algorithm I<br>
+          DCIT206&nbsp;&nbsp;&nbsp;&nbsp;Systems Administration<br>
+          DCIT208&nbsp;&nbsp;&nbsp;&nbsp;Software Engineering<br>
+          DCIT 212&nbsp;&nbsp;&nbsp;&nbsp;Numerical and Computational Methods<br>
+          </li>
+          <h3><li style="color:rgb(5, 5, 113);">LEVEL 300<br>First Semester</li></h3>
+          <li>
+            DCIT 301&nbsp;&nbsp;&nbsp;&nbsp;Operating Systems<br>
+            DCIT 303&nbsp;&nbsp;&nbsp;&nbsp;Computer Networks<br>
+            DCIT 305&nbsp;&nbsp;&nbsp;&nbsp;Database Fundamentals<br>
+            DCIT 313&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Artificial Intelligence<br>
+            MATH 359&nbsp;&nbsp;&nbsp;Discrete Mathematics<br>
+            ELECTIVES:<br>
+            DCIT 307&nbsp;&nbsp;&nbsp;&nbsp;Mini-Project<br>
+            DCIT 309&nbsp;&nbsp;&nbsp;&nbsp;Embedded Systems and IoT<br>
+            DCIT 311&nbsp;&nbsp;&nbsp;&nbsp;Machine Learning<br>
+          </li>
+          <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+          <li>ELECTIVES:
+            DCIT 400&nbsp;&nbsp;&nbsp;&nbsp;Project<br>
+            DCIT 401&nbsp;&nbsp;&nbsp;&nbsp;Social, Legal, Ethical and Professional Issues<br>
+            DCIT 407&nbsp;&nbsp;&nbsp;&nbsp;Image Processing<br>
+            DCIT 306&nbsp;&nbsp;&nbsp;&nbsp;Cloud Computing Numerical
+            and Computational Methods<br>
+            DCIT 316&nbsp;&nbsp;&nbsp;&nbsp;Computational models for
+            Social Media Mining<br>
+          </li>
+          <h3><li style="color:rgb(5, 5, 113);">LEVEL 400<br>First Semester</li></h3>
+          <li>
+            DCIT 400&nbsp;&nbsp;&nbsp;&nbsp;Project<br>
+            DCIT 401&nbsp;&nbsp;&nbsp;&nbsp;Social, Legal, Ethical and Professional Issues<br>
+            DCIT 407&nbsp;&nbsp;&nbsp;&nbsp;Image Processing<br>
+            ELECTIVES:<br>
+            DCIT 403&nbsp;&nbsp;&nbsp;&nbsp;Designing Intelligent Agents<br>
+            DCIT 405&nbsp;&nbsp;&nbsp;&nbsp;Statistical Models and Methods for Data Science<br>
+            DCIT 411&nbsp;&nbsp;&nbsp;&nbsp;Bioinformatics<br>
+            DCIT 417&nbsp;&nbsp;&nbsp;&nbsp;Network Performance Analysis and Modeling<br>
+            DCIT 423&nbsp;&nbsp;&nbsp;&nbsp;Network Servers and Infrastructure<br>
+            </li>
+            <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+            <li>
+                DCIT 400&nbsp;&nbsp;&nbsp;&nbsp;Project<br>
+                DCIT 402&nbsp;&nbsp;&nbsp;&nbsp;Management Principles in Computing<br>
+                DCIT 418&nbsp;&nbsp;&nbsp;&nbsp;Systems and Network Security<br>
+                DCIT 428&nbsp;&nbsp;&nbsp;&nbsp;Wireless Systems and Networks<br>
+                ELECTIVES:<br>
+                DCIT 404&nbsp;&nbsp;&nbsp;&nbsp;Advanced Databases<br>
+                DCIT 406&nbsp;&nbsp;&nbsp;&nbsp;Advanced Computer Networks<br>
+                DCIT 408&nbsp;&nbsp;&nbsp;&nbsp;Compilers<br>
+                DCIT 426&nbsp;&nbsp;&nbsp;&nbsp;Telecommunication Systems<br>
+                DCIT 412&nbsp;&nbsp;&nbsp;&nbsp;Computer Vision<br>
+                DCIT 414&nbsp;&nbsp;&nbsp;&nbsp;Data Mining and Warehousing<br>
+                DCIT 416&nbsp;&nbsp;&nbsp;&nbsp;Digital Signal Processing<br>
+                DCIT 422&nbsp;&nbsp;&nbsp;&nbsp;Information Visualization</li>
+        
+        </ul>
+        </ul>
+        <button id="myButton" style="margin-left:8%;">Information Technology</button>
+<ul id="dropdown-menu" class="hidden">
+  <h3><li style="color:rgb(5, 5, 113);">LEVEL 100<br>First Semester</li></h3>
+  <li>
+    UGRC 150&nbsp;&nbsp;&nbsp;&nbsp;Critical Thinking and Practical Reasoning<br>
+    DCIT 101&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Computer Science<br>
+    DCIT 103&nbsp;&nbsp;&nbsp;&nbsp;Office Productivity Tools<br>
+    DCIT 105&nbsp;&nbsp;&nbsp;&nbsp;Mathematics for IT Professionals<br>
+    STAT 111&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Statistics and Probability I<br>
+    ELECTIVES:<br>
+    MATH 121&nbsp;&nbsp;&nbsp;&nbsp;Algebra and Trigonometry<br>
+    MATH 123&nbsp;&nbsp;&nbsp;&nbsp;Vectors and Geometry<br>
+    ECON 101&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Economics I<br>
+    </li>
+    <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+  <li>
+    UGRC 110&nbsp;&nbsp;&nbsp;&nbsp;Academic Writing I<br>
+    UGRC 131-136&nbsp;&nbsp;&nbsp;&nbsp;Understanding Human Society<br>
+    MATH 122&nbsp;&nbsp;&nbsp;&nbsp;Calculus I<br>
+    MATH 126&nbsp;&nbsp;&nbsp;&nbsp;Algebra and Geometry<br>
+    STAT 112&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Statistics and Probability II<br>
+    DCIT 104&nbsp;&nbsp;&nbsp;&nbsp;Programming<br>
+    DCIT 102&nbsp;&nbsp;&nbsp;&nbsp;Computer Hardware Fund. and Circuits<br>
+  </li>
+  <h3><li style="color:rgb(5, 5, 113);">LEVEL 200<br>First Semester</li></h3>
+  <li>
+    UGRC 2100&nbsp;&nbsp;&nbsp;&nbsp;Academic Writing II<br>
+    DCIT 2010&nbsp;&nbsp;&nbsp;&nbsp;Programming I<br>
+    DCIT 2030&nbsp;&nbsp;&nbsp;&nbsp;Digital and Logic Systems Design<br>
+    DCIT 2050&nbsp;&nbsp;&nbsp;&nbsp;Multi Media and Web Design<br>
+    DCIT 2070&nbsp;&nbsp;&nbsp;&nbsp;Computer Architecture & Organisation<br>
+    DCIT 2090&nbsp;&nbsp;&nbsp;&nbsp;E-Business Architecture<br>
+  </li>
+  <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+  <li>
+    UGRC 220&nbsp;&nbsp;&nbsp;&nbsp;Introduction to African Studies<br>
+    DCIT 202&nbsp;&nbsp;&nbsp;&nbsp;Mobile Application Development<br>
+    DCIT204&nbsp;&nbsp;&nbsp;&nbsp;Data Structures & Algorithm I<br>
+    DCIT206&nbsp;&nbsp;&nbsp;&nbsp;Systems Administration<br>
+    DCIT208&nbsp;&nbsp;&nbsp;&nbsp;Software Engineering<br>
+    ELECTIVES:<br>
+    DCIT 200&nbsp;&nbsp;&nbsp;&nbsp;Internship<br>
+    DCIT 212&nbsp;&nbsp;&nbsp;&nbsp;Numerical and Computational Methods<br>
+    DCIT 214&nbsp;&nbsp;&nbsp;&nbsp;Information Modeling and Specification<br>
+    </li>
+    <h3><li style="color:rgb(5, 5, 113);">LEVEL 300<br>First Semester</li></h3>
+    <li>
+      DCIT 301&nbsp;&nbsp;&nbsp;&nbsp;Operating Systems<br>
+      DCIT 303&nbsp;&nbsp;&nbsp;&nbsp;Computer Networks<br>
+      DCIT 305&nbsp;&nbsp;&nbsp;&nbsp;Database Fundamentals<br>
+      DCIT 313&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Artificial Intelligence<br>
+      DCIT 317&nbsp;&nbsp;&nbsp;&nbsp;IT Project Management<br>
+      ELECTIVES:<br>
+      DCIT 307&nbsp;&nbsp;&nbsp;&nbsp;Mini-Project<br>
+      DCIT 315&nbsp;&nbsp;&nbsp;&nbsp;Principles of 3D Environment<br>
+      DCIT 321&nbsp;&nbsp;&nbsp;&nbsp;Software Evolution<br>
+    </li>
+    <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+      <li>
+        DCIT 3021&nbsp;&nbsp;&nbsp;&nbsp;Human Computer Interaction<br>
+        DCIT 3041&nbsp;&nbsp;&nbsp;&nbsp;Research Methods<br>
+        DCIT 3081&nbsp;&nbsp;&nbsp;&nbsp;Data Structures and Algorithms II<br>
+        DCIT 3121&nbsp;&nbsp;&nbsp;&nbsp;Information Security Management<br>
+        DCIT 3181&nbsp;&nbsp;&nbsp;&nbsp;Programming II<br>
+        ELECTIVES:<br>
+        DCIT 3141&nbsp;&nbsp;&nbsp;&nbsp;Game Engine Architecture<br>
+        DCIT 3221&nbsp;&nbsp;&nbsp;&nbsp;Database Management Administration<br>
+        </li>
+        <h3><li style="color:rgb(5, 5, 113);">LEVEL 400<br>First Semester</li></h3>
+        <li>DCIT 400&nbsp;&nbsp;&nbsp;&nbsp;Project<br>
+          DCIT 401&nbsp;&nbsp;&nbsp;&nbsp;Social, Legal, Ethical and Professional Issues<br>
+          DCIT 409&nbsp;&nbsp;&nbsp;&nbsp;Digital Forensics<br>
+          ELECTIVES:<br>
+          DCIT 413&nbsp;&nbsp;&nbsp;&nbsp;Play and Games<br>
+          DCIT 415&nbsp;&nbsp;&nbsp;&nbsp;Advanced Software Engineering<br>
+          DCIT 419&nbsp;&nbsp;&nbsp;&nbsp;Agile Methods<br>
+          DCIT 421&nbsp;&nbsp;&nbsp;&nbsp;Persuasive Systems Development<br>
+        </li>
+        <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3><br>
+        <li>
+          DCIT 400&nbsp;&nbsp;&nbsp;&nbsp;Project<br>
+          DCIT 402&nbsp;&nbsp;&nbsp;&nbsp;Management Principles in Computing<br>
+          DCIT 418&nbsp;&nbsp;&nbsp;&nbsp;Systems and Network Security<br>
+          DCIT 428&nbsp;&nbsp;&nbsp;&nbsp;Wireless Systems and Networks<br>
+          DCIT 318&nbsp;&nbsp;&nbsp;&nbsp;Programming II<br>
+          ELECTIVES:<br>
+          DCIT 404&nbsp;&nbsp;&nbsp;&nbsp;Advanced Databases<br>
+          DCIT 406&nbsp;&nbsp;&nbsp;&nbsp;Advanced Computer Networks<br>
+          DCIT 408&nbsp;&nbsp;&nbsp;&nbsp;Compilers<br>
+          DCIT 426&nbsp;&nbsp;&nbsp;&nbsp;Telecommunication Systems<br>
+          DCIT 412&nbsp;&nbsp;&nbsp;&nbsp;Computer Vision<br>
+          DCIT 414&nbsp;&nbsp;&nbsp;&nbsp;Data Mining and Warehousing<br>
+          DCIT 416&nbsp;&nbsp;&nbsp;&nbsp;Digital Signal Processing<br>
+          DCIT 422&nbsp;&nbsp;&nbsp;&nbsp;Information Visualization<br>
+        </li>
+        </ul>
+        </div>
+    
+
+    
+
+    
+</body>
+</html>
