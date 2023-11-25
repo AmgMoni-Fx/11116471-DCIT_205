@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Events</title>
+</head>
+
+<style>
+        
+#header{
+ background-color:rgb(204, 176, 13); 
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ z-index: 1000;  
+}
+.container{
+ background-color:rgb(5, 5, 113); 
+ position: fixed;   
+ left: 0; 
+ width: 100%; 
+ z-index: 100; 
+ height:100px;
+ color: aliceblue;
+}
+
+.tab a{
+   margin-right: 60px;
+   color: aliceblue;
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:30;
+   
+  }
+ 
+ nav ul {
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+
+}
+li{
+ margin-left:5%;
+}
+a:hover{
+ color: blue;
+}
+
+#imge{
+ vertical-align:middle;
+ border-style:none;
+ margin-top:-159px;
+ margin-left:90%;
+}  
+    .image-container {
+      position: relative;
+      display: inline-block;
+      margin-top:10.1%;
+      margin-left: 10%;
+      color: #ffffff;
+    }
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(1, 1,1 );  
+      opacity: 0.7;  
+    }
+    
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      text-align: center;
+    }
+    .home-about a{
+        text-decoration:none;
+        color: #ffffff;
+    }
+    ul.home-about {
+  list-style-type: none;
+  padding-left: 0;
+}
+ .down-arrow {
+ font-size: 30px;}
+
+ .container2 {
+      display: flex;
+      align-items: center;
+      margin-left:3%;
+    }
+    
+    .image1 {
+      width: 310px;
+      height: 200px;
+      margin-right: 10px;
+    }
+    
+    .footer2 {
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    
+    .footer{
+      background-color: #333333;
+    filter: grayscale(100%);
+    display:flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    list-style-type:none;
+    
+    
+
+    
+    }
+    .footer a{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+      display: list-item;
+      padding: 10px;
+
+    }
+    .footer ul{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+    }
+    .footer a:hover{
+      color:blue;
+
+    }
+
+    #under-head{
+ background-color:red;
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 98%; 
+ z-index: 1000;  
+ margin-top: 42%;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ padding:10px;
+}
+  
+  
+
+</style>
+<body>
+    <div>
+        <header  id="header"> 
+            <nav class="tab">
+              <ul>
+                <li><a href="#home" margin-left="5px">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#faculty">FACULTY</a></li>
+                <li><a href="#research">RESEARCH GROUPS</a></li>
+                <li><a href="#news&events">NEWS & EVENTS</a></li>
+                <li><a href="search">SEARCH</a></li>
+              </ul>
+            </nav>
+          
+       
+        <div class="site branding">
+          <div class="container">
+            <div class="row">
+              <h1>Department of Computer Science</h1>
+              <h4>University of Ghana</h4>
+              <img id="imge" src="https://th.bing.com/th/id/OIP.XqEXNO_YpDO6ABK7lPr5kAHaGh?w=171&h=180&c=
+              7&r=0&o=5&dpr=1.1&pid=1.7"
+               height="100px", width="100px">
+            </div>
+          </div>
+        </header>
+        <div class="image-container">
+            <img src="c:\Users\AMG MONI\Documents\UgC.jpg" alt="Your Image">
+            <div class="image-overlay"></div>
+            <div class="image-text">
+              EVENTS
+              <ul class="home-about">
+                <li><a href="#">Home</a></li>
+                <span class="down-arrow">&#8595;</span>
+                <li><a href="#">Events</a></li>
+              </ul>
+        
+            </div>
+          </div>
+          <div class="up-events" style="text-align: center;" >
+            <p style="font-size: 30px; color: rgb(24, 24, 88);margin-bottom:1% ;" >Upcoming Events</p>
+            <hi>Sorry there are no upcoming events</hi>
+         </div>
+         <div class="up-events" style="text-align: center;" >
+            <p style="font-size: 40px; color: rgb(24, 24, 88);margin-bottom:3% ;" >Past events</p>
+         </div>
+ 
+           <div class="container2">
+             <img src="https://dcs.ug.edu.gh/img/gallery/shortcourse17.08.2021.jpeg" alt="Your Image" class="image1">
+             <div class="footer2">
+               <h3>Online Short Courses</h3> 
+                <p> 20th August, 2020
+                
+               <p> Registration Deadline:
+                17th September, 2021</p>
+             </div>
+             <div class="container2">
+              <img src="https://dcs.ug.edu.gh/img/Cyber%20Security.jpg" alt="Your Image" class="image1">
+              <div class="footer2">
+                <h3>Global CyberTech Workshop</h3> 
+                 <p> 2nd & 3rd December, 2021</p>
+                  
+                 <p> Time: 8:30 am - 3:30 pm
+                  Venue: Computer Science Department - University of Ghana</p>
+              </div>
+            </div>
+           </div>
+           <div class="container2"style="margin-top:5%;">
+            <img src="https://dcs.ug.edu.gh/img/event3.jpeg" alt="Your Image" class="image1" >
+            <div class="footer2">
+              <h3>BECOMING A WORLD CLASS SOFTWARE ENGINEER</h3> 
+               <p>20th August, 2020</p>
+               
+              <p> Venue - Software Lab</p>
+              
+            </div>
+            </div>
+
+            <div class="footer"> 
+              <ul class="academic-list">
+           <div class="academic" style="font-size:20px;"> ACADEMIC</div>  
+        <li><a href="#"> Undergraduate Courses</a></li>
+    <li><a href="#"> Graduate Courses(MPhil Computer Science)</a></li>
+<li><a href="#"> Graduate Courses(MSc Computer Science)</a></li>
+<li><a href="#"> Graduate Courses(PhD)</a></li>
+<li><a href="#"> Academic Calendar</a></li>
+<li><a href="#">Placements For Level 200 Students</a></li>
+<li><a href="#"> Student Complaint Form</a></li>
+<ul><h3>NEWS-LETTER</h3></ul>
+</ul>
+<hi style="margin-top: 30%; margin-left:-25%;"> Stay update with our latest</hi>
+
+
+<ul class="academic-list2" style="margin-left: 7%;">
+<div class=" Admissions"  style="font-size:20px;"> ADMISSIONS</div>
+<li><a href="#">Undergraduate</a></li>
+<li><a href="#"> Graduate</a></li>
+<li><a href="#" >International Students</a></li>
+<li><a href="#">Entry Requirements</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+
+
+
+<ul class="academic-list3" style="margin-left: 10%;">
+<div class=" Research"  style="font-size:20px;">RESEARCH</div>
+<li><a href="#">Research at DCS</a></li>
+<li><a href="#"> Research Impact</a></li>
+<li><a href="#"> Libraries</a></li>
+</ul>
+
+<ul class="academic-list3" style="margin-left:5%;">
+<div class=" About The Department"  style="font-size:20px;">ABOUT THE DEPARTMENT</div>
+<li><a href="#">Introducing DCS</a></li>
+<li><a href="#"> Head of Department's office</a></li>
+<li><a href="#"> Faculty</a></li>
+   <li><a href="#"> Events</a></li>
+         </ul>
+
+         <div style="margin-top: 30%; margin-left:-70%;">
+          <ul>
+            <div>CONTACT US</div>
+            <li>Phone & Email</li>
+            <li>+233(0)501382035</li>
+            <li>+233(0)559145698</li>
+            <li>dcs@ug.edu.gh</li>
+          </ul>
+        </div>   
+        <div style="margin-top: 30%; margin-left: 15%;">
+          <ul>
+            <div>LOCATION</div>
+            <li>University Of Ghana, Legon Campus</li>
+            <li>Opposite Mathematics Department </li>
+          </ul> 
+          </div> 
+          <ul>
+
+          <div id="under-head"> 
+            <nav class="under-score">
+              <ul>
+                <li><a href="#home" margin-left="5px">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#faculty">FACULTY</a></li>
+                <li><a href="#research">RESEARCH GROUPS</a></li>
+                <li><a href="#news&events">NEWS & EVENTS</a></li>
+              
+                <li><a href="#">
+                  <form action="/search" method="GET">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">
+                      <img src="https://cdn-icons-png.flaticon.com/512/6905/6905713.png "style="margin-left:-20%"; height="12px" width="20px" alt="Search">
+                    </button>
+                  </form>
+              </a></li>
+            </nav>
+          </ul>
+          </div>
+          
+          
+</body>
+</html>
+
+
+
+ 
