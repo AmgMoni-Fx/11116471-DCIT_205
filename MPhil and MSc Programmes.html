@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        
+#header{
+ background-color:rgb(204, 176, 13); 
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ z-index: 1000;  
+}
+.container{
+ background-color:rgb(5, 5, 113); 
+ position: fixed;   
+ left: 0; 
+ width: 100%; 
+ z-index: 100; 
+ height:100px;
+ color: aliceblue;
+}
+
+.tab a{
+   margin-right: 60px;
+   color: aliceblue;
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:30;
+   
+  }
+ 
+ nav ul {
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+
+}
+li{
+ margin-left:5%;
+}
+a:hover{
+ color: blue;
+}
+
+#imge{
+ vertical-align:middle;
+ border-style:none;
+ margin-top:-159px;
+ margin-left:90%;
+}  
+    .image-container {
+      position: relative;
+      display: inline-block;
+      margin-top:10.1%;
+      margin-left: 10%;
+      color: #ffffff;
+    }
+    
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(1, 1,1 );  
+      opacity: 0.7;  
+    }
+    
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+      text-align: center;
+    }
+    .home-about a{
+        text-decoration:none;
+        color:aliceblue
+    }
+    ul.home-about {
+  list-style-type: none;
+  padding-left: 0;
+}
+ .down-arrow {
+ font-size: 30px;}
+ .welcome{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 88);
+    margin-bottom: 10px;
+ } 
+ 
+.box-container{
+  
+  position: absolute;
+ top: 60%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+ 
+}
+b{
+  margin-top: auto;
+  color:rgb(204, 176, 13); 
+}
+
+.box-header {
+  bottom: 0;
+  left: 50%;
+  width: 230px;
+  height: 80px;
+ background-color:rgb(5, 5, 113); 
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+ justify-content: center;
+ align-items: center;
+ border-radius:50%;
+}
+.box-header:hover{
+  color:rgb(204, 176, 13);
+}
+
+.box-description {
+overflow: hidden;
+  width: 230px;
+  height: 180px;
+  text-decoration: none;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+  color: #2C2A58;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.box-description:hover{
+  color: rgb(63, 71, 168);
+}
+
+.box-link {
+  text-decoration:none;
+}
+
+.container2 {
+        display: flex;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top:30%;
+    
+      }
+
+      .container2 img {
+        margin-right: 10px;
+        width:130%;
+        max-width: 110%;
+        height: auto;
+      }
+
+      .D-button {
+        margin-top: 0;
+        color: rgb(24, 24, 88);;
+
+      }
+      
+      .fam {
+        margin-bottom: 20px;
+      }
+      
+#myButton {
+  padding: 10px 20px;
+  background-color:rgb(5, 5, 113); ;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 42%;
+}
+
+#myList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fefefe;
+  padding: 10px;
+  border: 1px solid #888;
+  min-width: 150px;
+  width: 38%;
+}
+
+.css ul{
+    list-style-type:none;
+    margin-left: 3%;
+}
+.css{
+  margin-left:3%;
+}
+#dropdown-menu {
+  display: block;
+  position: absolute;
+  margin-left:4%;
+  position: absolute;
+  top: 160%;
+  left: 0;
+  background-color: #fefefe;
+  padding: 10px;
+  border: 1px solid #888;
+  min-width: 150px;
+  width: 38%;
+}
+
+#dropdown-menu li {
+  list-style-type: none;
+}
+
+#dropdown-menu ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+} 
+     
+#Button {
+  padding: 10px 20px;
+  background-color:rgb(5, 5, 113); ;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 43%;
+  margin-left: 54%;
+}
+
+ 
+#dropdown {
+  display: block;
+  position: absolute;
+  margin-left:57%;
+  position: absolute;
+  top: 165%;
+  left: 0;
+  background-color: #fefefe;
+  padding: 10px;
+  border: 1px solid #888;
+  min-width: 150px;
+  width: 38%;
+}
+
+#dropdown li {
+  list-style-type: none;
+}
+
+#dropdown ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+} 
+ 
+.cont {
+        display: flex;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top:5%;
+    
+      }
+
+      .cont img {
+        margin-right: 10px;
+        width:50%;
+      }
+
+      .D-button {
+        margin-top: 0;
+        color: rgb(24, 24, 88);;
+
+      }
+      
+      .fam {
+        margin-bottom: 20px;
+      }
+       
+    .footer{
+      background-color: #333333;
+    filter: grayscale(100%);
+    display:flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    list-style-type:none;
+    
+    
+
+    
+    }
+    .footer a{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+      display: list-item;
+      padding: 10px;
+
+    }
+    .footer ul{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+    }
+    .footer a:hover{
+      color:blue;
+
+    }
+
+    #under-head{
+ background-color:red;
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 99.9%; 
+ z-index: 1000;  
+ margin-top: 40%;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+}
+</style>
+<body>
+    <div>
+        <header  id="header"> 
+            <nav class="tab">
+              <ul>
+                <li><a href="#home" margin-left="5px">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#faculty">FACULTY</a></li>
+                <li><a href="#research">RESEARCH GROUPS</a></li>
+                <li><a href="#news&events">NEWS & EVENTS</a></li>
+                <li><a href="search">SEARCH</a></li>
+              </ul>
+            </nav>
+          
+       
+        <div class="site branding">
+          <div class="container">
+            <div class="row">
+              <h1>Department of Computer Science</h1>
+              <h4>University of Ghana</h4>
+              <img id="imge" src="https://th.bing.com/th/id/OIP.XqEXNO_YpDO6ABK7lPr5kAHaGh?w=171&h=180&c=
+              7&r=0&o=5&dpr=1.1&pid=1.7"
+               height="100px", width="100px">
+            </div>
+          </div>
+        </header>
+        <div class="image-container">
+            <img src="c:\Users\AMG MONI\Documents\UgC.jpg" alt="Your Image">
+            <div class="image-overlay"></div>
+            <div class="image-text">
+                Insight Into MPhil and MSc Programmes
+              <ul class="home-about">
+                <li><a href="#">Home</a></li>
+                <span class="down-arrow">&#8595;</span>
+                <li><a href="#"> MPhil/MSc</a></li>
+              </ul>
+        
+            </div>
+          </div>
+
+          <section class="box-container">
+            <div>
+                <a href="" class="box-link">
+                    <div>
+                        <div class="box-header">Short Courses</div>
+                        <div class="box-description">Our eight week intensive certificate is open to senior high 
+                            school graduates, tertiary students, school graduates, workers and the general public.
+                             <br /> <br /><b>Read More</b>
+                            </div>
+                    </div>
+                </a>
+            </div>
+           
+             <div>
+                <a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/undergraduate%20prog.html" class="box-link">
+                    <div class="box">
+                        <div class="box-header">Undergraduate programmes</div>
+                        <div class="box-description">Open the door to sought-after technology careers
+                             with a world-class Bachelor of Science in Computer Science degree.
+                             <br /> <br /><b>Read More</b>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="" class="box-link">
+                    <div >
+                        <div class="box-header">MPhil and Msc programmes.</div>
+                        <div class="box-description">Embrace world class graduate education
+                            with unique blend of cutting-edge research and industry experience.
+                              <b>Read More</b>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div >
+                <a href="" class="box-link">
+                    <div >
+                        <div class="box-header">PhD programmes.</div>
+                        <div class="box-description">Our PHDs lead the effort to extend the boundaries of knowledge
+                             through quality and industry relevant research.
+                              <b>Read More</b>
+                            </div>
+                    </div>
+                </a>
+            </div>
+     
+     </section>
+        </section>
+        <div class="container2">
+            <div class="text-container">
+              <h1 class="D-button">MPhil / MSc Programmes</h1>
+              <p class="fam"> The Department of Computer Science - University of Ghana currently runs Masters of Science (MSc.) in Computer Science and Master of Philosophy (MPhil.) in Computer Science.<br>
+
+                The MSc. is a 1-year (weekend/evening) programme with a capstone project while the MPhil is a 2-year (full-time) programme.<br>
+                 The first year of the MPhil is taught course and second year is research and dissertation. Both programmes are accelerated 
+                 master's programme specially designed to train current and future computer scientist who are available for full-time or part-time study.<br>
+                
+                Students enrolled in these programmes are equipped with broader knowledge in theoretical computer science and advance technical skills to approach science in
+                 technology as a disruptive force to manage complex problems of the global society. At the end of these programmes, students will gain hands-on experience in solving complex,
+                  and unstructured scientific problems while learning subjects like Advance Databases, Advance Data Structures and Algorithms and Networks
+                </p>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.p84rYGgPnwp2_CYGdtZOOQHaDh?w=325&h=166&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Image">
+          </div><br>
+
+          <div class="css"> 
+          <button id="myButton">MPhil. Computer Science</button>
+          <ul id="dropdown-menu" class="hidden">
+            <h3><li style="color:rgb(5, 5, 113);">LEVEL 600<br>First Semester</li></h3>
+            <li>
+              CSCD 601&nbsp;&nbsp;&nbsp;&nbsp;Research Methods<br>
+              CSCD 603&nbsp;&nbsp;&nbsp;&nbsp;Advanced Data Structures and Algorithms<br>
+              CSCD 609&nbsp;&nbsp;&nbsp;&nbsp;Principles of Wireless and Mobile Systems<br>
+              ELECTIVES:<br>
+              CSCD 607&nbsp;&nbsp;&nbsp;&nbsp;Advanced Computer Networks<br>
+              CSCD 611&nbsp;&nbsp;&nbsp;&nbsp;Advanced Database Systems<br>
+              CPEN 641&nbsp;&nbsp;&nbsp;&nbsp;Advanced Operating Systems<br>
+              CPEN 637&nbsp;&nbsp;&nbsp;&nbsp;Human Computer Interaction<br>
+             </li>                 
+              </li>
+              <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+              <li>
+                CSCD 606&nbsp;&nbsp;&nbsp;&nbsp;Advanced Software Engineering<br>
+                CSCD 604&nbsp;&nbsp;&nbsp;&nbsp;Distributed Systems<br>
+                CSCD 610&nbsp;&nbsp;&nbsp;&nbsp;Seminar I<br>
+                CSCD 612&nbsp;&nbsp;&nbsp;&nbsp;Intelligent Systems<br>
+                ELECTIVES:<br>
+                CSCD 616&nbsp;&nbsp;&nbsp;&nbsp;Bioinformatics<br>
+                CSCD 608&nbsp;&nbsp;&nbsp;&nbsp;Advanced Computer Vision<br>
+                CSCD 614&nbsp;&nbsp;&nbsp;&nbsp;Wireless Systems Design<br>
+                CPEN 656&nbsp;&nbsp;&nbsp;&nbsp;Networks Security<br>
+                MATH 652&nbsp;&nbsp;&nbsp;&nbsp;Computational Mathematics<br>
+                CSCD 630&nbsp;&nbsp;&nbsp;&nbsp;MPhil Thesis<br>
+               </li>
+               </ul>
+               <div class="css"> 
+                <button id="Button">MPhil. Computer Science</button>
+                <ul id="dropdown" class="hidden">
+                  <h3><li style="color:rgb(5, 5, 113);">LEVEL 600<br>First Semester</li></h3>
+                  <li>First Semester
+                    CSCD 601&nbsp;&nbsp;&nbsp;&nbsp;Research Methods<br>
+                    CSCD 603&nbsp;&nbsp;&nbsp;&nbsp;Advanced Data Structures and Algorithms<br>
+                    CSCD 609&nbsp;&nbsp;&nbsp;&nbsp;Principles of Wireless and Mobile Systems<br>
+                    ELECTIVES:<br>
+                    CSCD 607&nbsp;&nbsp;&nbsp;&nbsp;Advanced Computer Networks<br>
+                    CSCD 611&nbsp;&nbsp;&nbsp;&nbsp;Advanced Database Systems<br>
+                    CPEN 641&nbsp;&nbsp;&nbsp;&nbsp;Advanced Operating Systems<br>
+                    CPEN 637&nbsp;&nbsp;&nbsp;&nbsp;Human Computer Interaction<br>
+                    </li>              
+                    </li>
+                    <h3><li style="color:rgb(5, 5, 113);">Second Semester</li></h3>
+                     <li>
+                      CSCD 602&nbsp;&nbsp;&nbsp;&nbsp;Advanced Software Engineering<br>
+                      CSCD 604&nbsp;&nbsp;&nbsp;&nbsp;Distributed Systems<br>
+                      CSCD 610&nbsp;&nbsp;&nbsp;&nbsp;Seminar I<br>
+                      CSCD 612&nbsp;&nbsp;&nbsp;&nbsp;Intelligent Systems<br>
+                      ELECTIVES:<br>
+                      CSCD 606&nbsp;&nbsp;&nbsp;&nbsp;Bioinformatics<br>
+                      CSCD 608&nbsp;&nbsp;&nbsp;&nbsp;Advanced Computer Vision<br>
+                      CSCD 614&nbsp;&nbsp;&nbsp;&nbsp;Wireless Systems Design<br>
+                      CPEN 656&nbsp;&nbsp;&nbsp;&nbsp;Networks Security<br>
+                      MATH 652&nbsp;&nbsp;&nbsp;&nbsp;Computational Mathematics<br>
+                      CSCD 600&nbsp;&nbsp;&nbsp;&nbsp;MSc Dissertation<br>
+                      </li>
+                      </ul>
+                      </div>
+                      </div>
+                      <div class="us" style="margin-top:40%; ">
+                        <div style="text-align: center; color: #2C2A58;">
+                          <h1 >Get To Know US</h1>
+                          <p>Things get interesting because you are eager to know more , or you become eager to know more<br> because it is interesting?</p>
+                        </div>
+                        <div class="cont">
+                          <div class="text-cont">
+                            <h1 class="D-button">Our Organization</h1>
+                            <p class="fam">The University of Ghana is one of the Africa's most preeminent public universities.<br>
+                               Our impact on individuals, our region and the world is profound.<br>
+                                whether we are launching young people into a boundless future or confronting the grand challenges of our time through dauntless research.<br>
+                                  UG educates more than 38,000students annually, with approximately 2.64% being computer science students.<br>
+                                   We turn ideas into impact and transform the world around us. For more about our impact, visit our news site, UG News.</p>
+                                   <h1> <p style="text-align: center; color: #2C2A58;">YOUR GATEWAY TO WORLD CLASS <br>COMPUTER SCIENCE EDUCATION</p> <h4></h1>
+                                   <img style="width: 100%;" src="c:\Users\AMG MONI\Documents\UgC.jpg" alt="Image">
+                          </div>
+                          <img src=" https://th.bing.com/th/id/OIP.ludJvl6EHMzeH_TZhUZmagAAAA?w=258&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Image">
+                        </div>
+
+                        
+                        <div class="footer"> 
+                          <ul class="academic-list">
+                       <div class="academic" style="font-size:20px;"> ACADEMIC</div>  
+                    <li><a href="#"> Undergraduate Courses</a></li>
+                <li><a href="#"> Graduate Courses(MPhil Computer Science)</a></li>
+            <li><a href="#"> Graduate Courses(MSc Computer Science)</a></li>
+        <li><a href="#"> Graduate Courses(PhD)</a></li>
+    <li><a href="#"> Academic Calendar</a></li>
+<li><a href="#">Placements For Level 200 Students</a></li>
+<li><a href="#"> Student Complaint Form</a></li>
+<ul><h3>NEWS-LETTER</h3></ul>
+</ul>
+<hi style="margin-top: 30%; margin-left:-25%;"> Stay update with our latest</hi>
+
+
+<ul class="academic-list2" style="margin-left: 7%;">
+<div class=" Admissions"  style="font-size:20px;"> ADMISSIONS</div>
+<li><a href="#">Undergraduate</a></li>
+  <li><a href="#"> Graduate</a></li>
+    <li><a href="#" >International Students</a></li>
+      <li><a href="#">Entry Requirements</a></li>
+        <li><a href="#">Contact Us</a></li>
+          </ul>
+          
+ 
+
+           <ul class="academic-list3" style="margin-left: 10%;">
+        <div class=" Research"  style="font-size:20px;">RESEARCH</div>
+   <li><a href="#">Research at DCS</a></li>
+<li><a href="#"> Research Impact</a></li>
+<li><a href="#"> Libraries</a></li>
+</ul>
+
+<ul class="academic-list3" style="margin-left:5%;">
+<div class=" About The Department"  style="font-size:20px;">ABOUT THE DEPARTMENT</div>
+    <li><a href="#">Introducing DCS</a></li>
+        <li><a href="#"> Head of Department's office</a></li>
+            <li><a href="#"> Faculty</a></li>
+               <li><a href="#"> Events</a></li>
+                     </ul>
+
+                     <div style="margin-top: 30%; margin-left:-70%;">
+                      <ul>
+                        <div>CONTACT US</div>
+                        <li>Phone & Email</li>
+                        <li>+233(0)501382035</li>
+                        <li>+233(0)559145698</li>
+                        <li>dcs@ug.edu.gh</li>
+                      </ul>
+                    </div>   
+                    <div style="margin-top: 30%; margin-left: 15%;">
+                      <ul>
+                        <div>LOCATION</div>
+                        <li>University Of Ghana, Legon Campus</li>
+                        <li>Opposite Mathematics Department </li>
+                      </ul> 
+                      </div> 
+                      <ul>
+
+                      <div id="under-head"> 
+                        <nav class="under-score">
+                          <ul>
+                            <li><a href="#home" margin-left="5px">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#faculty">FACULTY</a></li>
+                            <li><a href="#research">RESEARCH GROUPS</a></li>
+                            <li><a href="#news&events">NEWS & EVENTS</a></li>
+                          
+                            <li><a href="#">
+                              <form action="/search" method="GET">
+                                <input type="text" placeholder="Search..." name="search">
+                                <button type="submit">
+                                  <img src="https://cdn-icons-png.flaticon.com/512/6905/6905713.png "style="margin-left:-20%"; height="12px" width="20px" alt="Search">
+                                </button>
+                              </form>
+                          </a></li>
+                        </nav>
+                      </ul>
+                      </div>
+                        
+                        
+                      </div>
+
+
+
+
+
+                      
+                      </div>
+                      
+          
+    
+</body>
+</html>
