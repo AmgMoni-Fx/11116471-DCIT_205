@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shourt Courses</title>
+</head>
+
+<style>
+            
+#header{
+ background-color:rgb(204, 176, 13); 
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ z-index: 1000;  
+}
+.container{
+ background-color:rgb(5, 5, 113); 
+ position: fixed;   
+ left: 0; 
+ width: 100%; 
+ z-index: 100; 
+ height:100px;
+ color: aliceblue;
+}
+
+.tab a{
+   margin-right: 60px;
+   color: aliceblue;
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:30;
+   
+  }
+ 
+ nav ul {
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+
+}
+li{
+ margin-left:5%;
+}
+a:hover{
+ color: blue;
+}
+
+#imge{
+ vertical-align:middle;
+ border-style:none;
+ margin-top:-159px;
+ margin-left:90%;
+}  
+    .image-container {
+      position: relative;
+      display: inline-block;
+      margin-top:10.1%;
+      margin-left: 10%;
+      color: #ffffff;
+    }
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(1, 1,1 );  
+      opacity: 0.7;  
+    }
+    
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      text-align: center;
+    }
+    .home-about a{
+        text-decoration:none;
+        color: #ffffff;
+    }
+    ul.home-about {
+  list-style-type: none;
+  padding-left: 0;
+}
+ .down-arrow {
+ font-size: 30px;}
+ 
+.box-container{
+  
+  position: absolute;
+ top: 70%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+ 
+}
+b{
+  margin-top: auto;
+  color:rgb(204, 176, 13); 
+}
+
+.box-header {
+  bottom: 0;
+  left: 50%;
+  width: 230px;
+  height: 80px;
+ background-color:rgb(5, 5, 113); 
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+ justify-content: center;
+ align-items: center;
+ border-radius:50%;
+}
+.box-header:hover{
+  color:rgb(204, 176, 13);
+}
+
+.box-description {
+overflow: hidden;
+  width: 230px;
+  height: 180px;
+  text-decoration: none;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+  color: #2C2A58;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.box-description:hover{
+  color: rgb(63, 71, 168);
+}
+
+.box-link {
+  text-decoration:none;
+}
+
+.offer{
+  margin-left: 15%;
+  margin-top: 35%;
+}
+
+.h{
+  color: #2C2A58;
+  margin-left: -8%;
+  font-style: oblique;
+} 
+
+#img3{
+  height:400px;
+   width: 1135px;
+ vertical-align: middle;
+}
+.banner {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image-overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         z-index:1;
+      color: white;
+      font-weight: bold;
+       background-color: rgba(0, 0, 255, 0.2)
+
+    }
+    .over-text{
+      text-align: center;
+      font-size:50px;
+      margin-top:10px;
+    }
+    .register-button{
+      margin-left:45%; 
+      border-radius:10px; 
+      font-size: 20px;
+       color:rgb(204, 176, 13); 
+       border: none;
+    }
+    .register-button:hover{
+      color:blue;
+    }
+    
+    .footer{
+      background-color: #333333;
+    filter: grayscale(100%);
+    display:flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    list-style-type:none;
+  
+    }
+    .footer a{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+      display: list-item;
+      padding: 10px;
+
+    }
+    .footer ul{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+    }
+    .footer a:hover{
+      color:blue;
+
+    }
+
+    #under-head{
+ background-color:red;
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 98%; 
+ z-index: 1000;  
+ margin-top: 42%;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+ padding:10px;
+}
+  
+</style>
+
+<body>
+    
+    <div>
+        <header  id="header"> 
+            <nav class="tab">
+              <ul>
+                <li><a href="#home" margin-left="5px">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#faculty">FACULTY</a></li>
+                <li><a href="#research">RESEARCH GROUPS</a></li>
+                <li><a href="#news&events">NEWS & EVENTS</a></li>
+                <li><a href="search">SEARCH</a></li>
+              </ul>
+            </nav>
+          
+       
+        <div class="site branding">
+          <div class="container">
+            <div class="row">
+              <h1>Department of Computer Science</h1>
+              <h4>University of Ghana</h4>
+              <img id="imge" src="https://th.bing.com/th/id/OIP.XqEXNO_YpDO6ABK7lPr5kAHaGh?w=171&h=180&c=
+              7&r=0&o=5&dpr=1.1&pid=1.7"
+               height="100px", width="100px">
+            </div>
+          </div>
+        </header>
+        <div class="image-container">
+            <img src="c:\Users\AMG MONI\Documents\UgC.jpg" alt="Your Image">
+            <div class="image-overlay"></div>
+            <div class="image-text">
+              EVENTS
+              <ul class="home-about">
+                <li><a href="#">Home</a></li>
+                <span class="down-arrow">&#8595;</span>
+                <li><a href="#">Events</a></li>
+              </ul>
+        
+            </div>
+          </div>
+
+          <section class="box-container">
+            <div>
+                <a href="" class="box-link">
+                    <div>
+                        <div class="box-header">Short Courses</div>
+                        <div class="box-description">Our eight week intensive certificate is open to senior high 
+                            school graduates, tertiary students, school graduates, workers and the general public.
+                             <br /> <br /><b>Read More</b>
+                            </div>
+                    </div>
+                </a>
+            </div>
+           
+             <div>
+                <a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/undergraduate%20prog.html" class="box-link">
+                    <div class="box">
+                        <div class="box-header">Undergraduate programmes</div>
+                        <div class="box-description">Open the door to sought-after technology careers
+                             with a world-class Bachelor of Science in Computer Science degree.
+                             <br /> <br /><b>Read More</b>
+                            </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/MPhil%20and%20MSc%20Programmes.html#myList" class="box-link">
+                    <div >
+                        <div class="box-header">MPhil and Msc programmes.</div>
+                        <div class="box-description">Embrace world class graduate education
+                            with unique blend of cutting-edge research and industry experience.
+                              <b>Read More</b>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div >
+                <a href="" class="box-link">
+                    <div >
+                        <div class="box-header">PhD programmes.</div>
+                        <div class="box-description">Our PHDs lead the effort to extend the boundaries of knowledge
+                             through quality and industry relevant research.
+                              <b>Read More</b>
+                            </div>
+                    </div>
+                </a>
+            </div>
+     
+     </section>
+
+     <div class="offer">
+        <h1>Join our Short course Program</h1>
+           <h4 class="h">To be able to take full advantage of the opportunities available to this technology driven era, it is important to acquire new skills. 
+            Skills in ICT that will springboard your career</h4>
+
+   </div><br>
+   
+   <div class="banner">
+    <img id="img3" src="https://dcs.ug.edu.gh/img/gallery/PHOTO-2019-03-04-14-45-13%202.jpg"alt="Image">
+        <div class="image-overlay2">
+           <p class="over-text" >Join Our Short Course Program</p>
+
+<p style="font-size:13px; margin-left: 3%; font-family: Arial, Helvetica, sans-serif;  color: antiquewhite;"> 
+ To be able to take full advantage of the opportunities available to this technology driven era, it is important to acquire new skills.
+      Skills in ICT that will springboard your career 
+          </p>
+
+             <p style="font-size:13px; margin-top: 10%; margin-left:20%; font-size:20px; color:rgb(204, 176, 13);"> 
+                    Expect Instructors</p>
+                        <p style=" margin-left:3%;  font-family: Arial; color: antiquewhite;">
+                           Our instructors have years of industry experience which presents<br> students
+                       with a unique opportunity of learning from the best</p>
+
+                    <p style="font-size:13px; margin-top:-8%; margin-left:68%; font-size:20px;  color:rgb(204, 176, 13);"> 
+              Certification</p>
+        <p style=" margin-left:55%;  font-family: Arial; color: antiquewhite;">
+    You earn a certificate of completion from the department after completing and passing the prescribed exam</p>
+
+<button class="register-button"> &#9660;  REGISTER</button>
+     
+
+    </div>
+             </div>
+                         </div>
+                                
+                         <div class="footer"> 
+                            <ul class="academic-list">
+                         <div class="academic" style="font-size:20px;"> ACADEMIC</div>  
+                      <li><a href="#"> Undergraduate Courses</a></li>
+                  <li><a href="#"> Graduate Courses(MPhil Computer Science)</a></li>
+              <li><a href="#"> Graduate Courses(MSc Computer Science)</a></li>
+          <li><a href="#"> Graduate Courses(PhD)</a></li>
+      <li><a href="#"> Academic Calendar</a></li>
+  <li><a href="#">Placements For Level 200 Students</a></li>
+  <li><a href="#"> Student Complaint Form</a></li>
+  <ul><h3>NEWS-LETTER</h3></ul>
+</ul>
+<hi style="margin-top: 30%; margin-left:-25%;"> Stay update with our latest</hi>
+
+
+<ul class="academic-list2" style="margin-left: 7%;">
+<div class=" Admissions"  style="font-size:20px;"> ADMISSIONS</div>
+  <li><a href="#">Undergraduate</a></li>
+    <li><a href="#"> Graduate</a></li>
+      <li><a href="#" >International Students</a></li>
+        <li><a href="#">Entry Requirements</a></li>
+          <li><a href="#">Contact Us</a></li>
+            </ul>
+            
+   
+
+             <ul class="academic-list3" style="margin-left: 10%;">
+          <div class=" Research"  style="font-size:20px;">RESEARCH</div>
+     <li><a href="#">Research at DCS</a></li>
+  <li><a href="#"> Research Impact</a></li>
+<li><a href="#"> Libraries</a></li>
+</ul>
+
+<ul class="academic-list3" style="margin-left:5%;">
+  <div class=" About The Department"  style="font-size:20px;">ABOUT THE DEPARTMENT</div>
+      <li><a href="#">Introducing DCS</a></li>
+          <li><a href="#"> Head of Department's office</a></li>
+              <li><a href="#"> Faculty</a></li>
+                 <li><a href="#"> Events</a></li>
+                       </ul>
+
+                       <div style="margin-top: 30%; margin-left:-70%;">
+                        <ul>
+                          <div>CONTACT US</div>
+                          <li>Phone & Email</li>
+                          <li>+233(0)501382035</li>
+                          <li>+233(0)559145698</li>
+                          <li>dcs@ug.edu.gh</li>
+                        </ul>
+                      </div>   
+                      <div style="margin-top: 30%; margin-left: 15%;">
+                        <ul>
+                          <div>LOCATION</div>
+                          <li>University Of Ghana, Legon Campus</li>
+                          <li>Opposite Mathematics Department </li>
+                        </ul> 
+                        </div> 
+                        <ul>
+
+                        <div id="under-head"> 
+                          <nav class="under-score">
+                            <ul>
+                              <li><a href="#home" margin-left="5px">HOME</a></li>
+                              <li><a href="#about">ABOUT</a></li>
+                              <li><a href="#faculty">FACULTY</a></li>
+                              <li><a href="#research">RESEARCH GROUPS</a></li>
+                              <li><a href="#news&events">NEWS & EVENTS</a></li>
+                            
+                              <li><a href="#">
+                                <form action="/search" method="GET">
+                                  <input type="text" placeholder="Search..." name="search">
+                                  <button type="submit">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/6905/6905713.png "style="margin-left:-20%"; height="12px" width="20px" alt="Search">
+                                  </button>
+                                </form>
+                            </a></li>
+                          </nav>
+                        </ul>
+                        </div>
+        
+    
+</body>
+</html>
