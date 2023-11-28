@@ -1,0 +1,639 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Readme</title>
+ </head>
+  <style>
+       body{
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    position: relative;
+    padding: 0;
+}
+.main-page-margin{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#header{
+ background-color:rgb(204, 176, 13); 
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ z-index: 1000;  
+}
+.container{
+ background-color:rgb(5, 5, 113); 
+ position: fixed;   
+ left: 0; 
+ width: 100%; 
+ z-index: 100; 
+ height:100px;
+ color: aliceblue;
+}
+
+.tab a{
+   margin-right: 60px;
+   color: aliceblue;
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:30;
+   
+  }
+ 
+ nav ul {
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+
+}
+li{
+ margin-left:5%;
+}
+a:hover{
+ color: blue;
+}
+
+#imge{
+ vertical-align:middle;
+ border-style:none;
+ margin-top:-159px;
+ margin-left:90%;
+}
+
+.section1{
+    position: relative;
+    height: 500px;
+}
+.video-container {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-bg-text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1em;
+    color: #fff;
+    text-align: left;
+   white-space: nowrap;
+
+}
+.overlay{
+    position: absolute;
+    top:0;
+   left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0,0.6);
+}
+.alphaText{
+    font-weight: bold;
+    position: absolute;
+    top: 12%;
+    right: 40%;
+    text-transform: uppercase;
+    transform: translate(50%,0);
+}
+
+.box-container{
+  
+  position: absolute;
+ top: 90%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+ 
+}
+b{
+  margin-top: auto;
+  color:rgb(204, 176, 13); 
+}
+
+.box-header {
+  bottom: 0;
+  left: 50%;
+  width: 230px;
+  height: 80px;
+ background-color:rgb(5, 5, 113); 
+  box-sizing: border-box;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+ justify-content: center;
+ align-items: center;
+ border-radius:50%;
+}
+.box-header:hover{
+  color:rgb(204, 176, 13);
+}
+
+.box-description {
+overflow: hidden;
+  width: 230px;
+  height: 180px;
+  text-decoration: none;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+  color: #2C2A58;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.box-description:hover{
+  color: rgb(63, 71, 168);
+}
+
+.box-link {
+  text-decoration:none;
+}
+.intro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 88);
+    margin-top: 25%;
+ } 
+ .clone li {
+  list-style-type: none;
+ }
+ .clone{
+  font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 88);
+ }
+ .brief{
+  font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 24, 88);
+ }
+ .image-container {
+  display: flex;
+}
+
+.image-container img {
+  width: 50%;
+}
+      
+.footer{
+      background-color: #333333;
+    filter: grayscale(100%);
+    display:flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    list-style-type:none;
+    
+    
+
+    
+    }
+    .footer a{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+      display: list-item;
+      padding: 10px;
+
+    }
+    .footer ul{
+      text-decoration: none;
+      color: white;
+      list-style-type:none;
+    }
+    .footer a:hover{
+      color:blue;
+
+    }
+
+    #under-head{
+ background-color:red;
+ position: fixed;  
+ top: 0; 
+ left: 0; 
+ width: 99.9%; 
+ z-index: 1000;  
+ margin-top: 40%;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+}
+  </style>
+<body>
+    <header  id="header"> 
+        <nav class="tab">
+          <ul>
+            <li><a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/index.html" margin-left="5px">HOME</a></li>
+            <li><a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/about.html#">ABOUT</a></li>
+            <li><a href="#faculty">FACULTY</a></li>
+            <li><a href="#research">RESEARCH GROUPS</a></li>
+            <li><a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/Events.html#">NEWS & EVENTS</a></li>
+            <li><a href="search">SEARCH</a></li>
+          </ul>
+        </nav>
+      
+   
+    <div class="site branding">
+      <div class="container">
+        <div class="row">
+          <h1>Department of Computer Science</h1>
+          <h4>University of Ghana</h4>
+          <img id="imge" src="https://th.bing.com/th/id/OIP.XqEXNO_YpDO6ABK7lPr5kAHaGh?w=171&h=180&c=
+          7&r=0&o=5&dpr=1.1&pid=1.7"
+           height="100px", width="100px">
+        </div>
+      </div>
+    </header>
+    <div class="main-page-margin">
+    <section class="section1">
+    <div class="video-container">
+        <div class="overlay"></div>
+        <video class="video-bg" autoplay muted loop style="object-fit: cover" poster="index-poster.jpg">
+            <source src="https://dcs.ug.edu.gh/video-bg.mp4" type="video/mp4">
+            "Your browser does not support the video"
+        </video>
+        <div class="video-bg-text">
+            <p class="alphaText" >Your gateway to world class<br />computer Science Education</p>
+        </div>
+    </div>
+    <section class="box-container">
+        <div>
+            <a href="" class="box-link">
+                <div>
+                    <div class="box-header">Short Courses</div>
+                    <div class="box-description">Our eight week intensive certificate is open to senior high 
+                        school graduates, tertiary students, school graduates, workers and the general public.
+                         <br /> <br /><b>Read More</b>
+                        </div>
+                </div>
+            </a>
+        </div>
+       
+         <div>
+            <a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/undergraduate%20prog.html" class="box-link">
+                <div class="box">
+                    <div class="box-header">Undergraduate programmes</div>
+                    <div class="box-description">Open the door to sought-after technology careers
+                         with a world-class Bachelor of Science in Computer Science degree.
+                         <br /> <br /><b>Read More</b>
+                        </div>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="file:///C:/Users/AMG%20MONI/Desktop/MONI.HTML/11116471-DCIT205/MPhil%20and%20MSc%20Programmes.html#myList" class="box-link">
+                <div >
+                    <div class="box-header">MPhil and Msc programmes.</div>
+                    <div class="box-description">Embrace world class graduate education
+                        with unique blend of cutting-edge research and industry experience.
+                          <b>Read More</b>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div >
+            <a href="" class="box-link">
+                <div >
+                    <div class="box-header">PhD programmes.</div>
+                    <div class="box-description">Our PHDs lead the effort to extend the boundaries of knowledge
+                         through quality and industry relevant research.
+                          <b>Read More</b>
+                        </div>
+                </div>
+            </a>
+        </div>
+ 
+ </section>
+    </section>
+
+    <div class="intro">
+      <h1>INTRODUCTION</h1>
+      <p class="paragraph-spacing">
+        Welcome to our website! This is a comprehensive Readme document that provides information about the purpose of the website, 
+        instructions on how to clone and set up the project, screenshots of each page, what we have learned from the project, 
+        and contact information.
+        The website for the University of Ghana Computer Science department is designed to provide information and resources related to 
+        the computer science program at the university. It serves as a digital platform to showcase the department's activities, faculty,
+         courses, research initiatives, and other relevant information for prospective students, current students, faculty members,
+          and the general public.
+      </p>
+      <h1>PURPOSE</h1>
+      <p class="paragraph-spacing">
+        The purpose of creating the website for the University of Ghana Computer Science department is to serve as an informative and 
+        engaging platform for prospective students, current students, faculty members, and the general public. It aims to attract talented 
+        individuals by providing detailed information about the computer science program, admission requirements, and faculty profiles.
+         For current students, the website offers essential course information, resources, and support to enhance their learning experience.
+          It also showcases the expertise and achievements of the faculty, fostering research collaborations and mentorship opportunities.
+           Additionally, the website serves as a communication channel, sharing news, events, and announcements related to the department,
+            creating a sense of community. It highlights the success stories of alumni, establishing a strong network and inspiring current
+             students. Moreover, the website provides career support, featuring job postings, internships, and resources to assist students 
+             in their professional development. Overall, the website serves as a comprehensive platform that promotes the computer science
+              program, facilitates information sharing, fosters community engagement, and supports the academic and career goals of individuals
+               associated with the department.
+      </p>
+      <h1>Cloning and Setup</h1>
+      <p class="paragraph-spacing">
+        clone" refers to the process of creating a local copy of a remote repository.
+         When you clone a repository, you create an exact replica of the entire project, including all its files, commit history,
+          branches, and tags.<br>
+          Cloning a repository is an essential step when starting to work on a project collaboratively or when you want to have a local 
+          copy of a project on your machine. By cloning a repository, you can have access to the project's source code and its full history,
+           enabling you to make changes, contribute to the project, or work on it independently.
+           </p>
+           </div>
+
+           <div class="clone">
+           <h1 style="text-align: center;">This Steps can Help Cloning and Setup</h1>
+           <li><h3>Clone the repository:</h3>  Use the git clone command followed by the repository URL to create a local copy of the project on your machine.</li>
+
+           <li><h3>1. Navigate to the project directory:</h3>   Use the cd command to change your current directory to the project directory that was created after cloning.</li>
+            
+            <li><h3>2. Install dependencies:</h3>Install dependencies: Depending on the project, you may need to install the required dependencies. 
+              This is typically done using a package manager such as npm (Node Package Manager) or yarn. Use the appropriate command 
+              (npm install or yarn install) to install the project dependencies based on the project's package.json file.</li>
+            
+           <li><h3>3. Configure environment variables:</h3>  Some projects require configuration of environment variables for things like database connections,
+             API keys, or other sensitive information. Check if the project has any specific environment variables that need to be set and provide the necessary values.</li>
+            
+           <li><h3>4. Start the development server:</h3>   Use the appropriate command (npm start or yarn start) to start the development server. 
+            This command will compile the project's source code and start a local server that allows you to view the website in your web browser.</li>
+            
+            <li><h3>5. Access the website:</h3>  Open your preferred web browser and visit the specified localhost address (e.g., http://localhost:3000) to access the locally running website.</li>
+
+      </p>
+      <h1>Author Information</h1>
+      <li>Name: Daniel Adjetey Annan</li>
+      <li>Student ID: 11116471</li>
+   </div>
+
+   <div class="brief">
+    <h1 style="text-align: center;">The Home Page</h1>
+    <p>The home page of a website serves as the main entry point and typically provides an overview of the website's purpose, 
+    content, and navigation. It is the page that visitors see first when they access your website.</p>
+
+<p>The primary goal of the home page is to engage and capture the attention of visitors, encouraging them to explore further and 
+find the information or services they are looking for. Here are some key elements and components commonly found on a home page:</p>
+    <div class="image-container">
+      <img src="c:\Users\AMG MONI\Pictures\hom1.jpeg" alt="Left Image">
+      <img src="c:\Users\AMG MONI\Pictures\hom2.jpeg" alt="Right Image">
+    </div>
+    <p><h3>Header:</h3>  The header usually appears at the top of the home page and often contains the website's logo, branding elements,<br>
+     and a navigation menu. It provides a consistent and accessible way for users to navigate through the website.</p>
+     <p><h3> Featured Content:</h3>  This section highlights key content, products, or services that you want to draw attention to.<br>
+      It may include a selection of featured articles, products, client testimonials, or any other compelling content that represents the core offerings of your website..</p>
+       <p><h3> About Section:</h3>  The about section provides a brief introduction to your website or organization. It can include information<br>
+        about your mission, values, team, or any unique selling points that differentiate your website from others.<h3>and many more that are included</h3>
+        </p>
+
+        <h1 style="text-align: center;">The About Page</h1>
+            <p> The About page of a website is an important section that provides visitors with information about your website, organization, or brand. 
+            It offers an opportunity to tell your story, showcase your values, and establish credibility. Here's a brief description of what an About page typically includes:
+            </p>
+             <div class="abt">
+      <img style="width: 50%;" src="c:\Users\AMG MONI\Pictures\ab1.jpeg" alt="Left Image">
+      <img  style="width: 30%;margin-left:5%;" src="c:\Users\AMG MONI\Pictures\ab4.jpeg"alt="Right Image">
+    </div>
+    <p><h3>Welcome:</h3>  Start by introducing your website or organization. Explain its purpose, mission, or the problem it aims to solve.<br>
+       Use concise and engaging language to capture the attention of visitors and make them interested in learning more..</p>
+      <p><h3>History:</h3>  Provide a summary of your website's or organization's history. Share important milestones, achievements,<br>
+         or significant events that have shaped your journey. This helps to build trust and demonstrate a track record of success or expertise..</p>
+        <p><h3>Achievements and Recognition:</h3>  If applicable, showcase any notable achievements, awards, or recognition your website or organization has received.<br>
+          This adds credibility and reinforces the expertise and quality of your work.
+         </p>
+
+         <h1 style="text-align: center;">The News & Events Page</h1>
+         <p>The Events page of your website is a dedicated section where you can provide information about upcoming or past events hosted or sponsored by your organization.<br>
+           It serves as a hub for visitors to learn about and engage with your events. 
+          </p>
+          <div class="image-container">
+            <img src="c:\Users\AMG MONI\Pictures\ev1.jpeg" alt="Left Image">
+            <img src="c:\Users\AMG MONI\Pictures\ev2.jpeg" alt="Right Image">
+          </div>
+          <p><h3> Event Listings:</h3> Start by displaying a list or grid of upcoming events. Each event listing should include key details such as the event title,<br>
+             date, time, location, and a brief description. This allows visitors to quickly scan and identify events that interest them.</p>
+            Use concise and engaging language to capture the attention of visitors and make them interested in learning more.</p>
+           <p><h3> Event Details: </h3>When a visitor clicks on an event listing, they should be taken to a dedicated page with more detailed<br>
+             information about that specific event. Include a comprehensive description, agenda or schedule, speakers or performers,<br>
+              registration or ticketing information, and any special requirements or instructions.</p>
+             <p><h3>Event Archives or Past Events:</h3>  Consider including a section or separate page for past events.<br>
+               This allows visitors to access information about previous events, view photos or videos, and get a sense of the types of events your organization has hosted in the past.
+              </p>
+              <p><h3>Event Updates or News:</h3>  If you frequently host events or have a dynamic event calendar, consider including an event news or updates section.
+                 This can feature announcements, updates, or changes to upcoming events, ensuring visitors have the latest information.
+               </p>
+
+               <h1 style="text-align: center;">MPhil and MSc Programme Page</h1>
+               <p> The MPhil and MSc Programme page of the website is a dedicated section that provides comprehensive information about the MPhil (Master of Philosophy)
+                 and MSc (Master of Science) programs offered by your institution or organization. This page serves as a hub for prospective students to learn about the programs,
+                  their curriculum, admission requirements, and other relevant details
+                </p>
+                <div class="image-container">
+                  <img src="c:\Users\AMG MONI\Pictures\mh1.jpeg" alt="Left Image">
+                  <img style="margin-left: 5%;" src="c:\Users\AMG MONI\Pictures\mh2.jpeg" alt="Left Image">
+                </div>
+                <img style="width: 80%;" src="c:\Users\AMG MONI\Pictures\mh3.jpeg" alt="Right Image">
+                <p><h3>  Program Overview:</h3>  Start by providing a clear and concise overview of the MPhil and MSc programs.
+                   Explain the program's objectives, the academic focus or specialization areas, and the benefits of pursuing these degrees.
+                    This section should capture the attention of prospective students and highlight the unique aspects of your programs.</p>
+                 Use concise and engaging language to capture the attention of visitors and make them interested in learning more.</p>
+                <p><h3> Admission Requirements: </h3>  Detail the specific admission requirements for the MPhil and MSc programs.
+                   This includes academic prerequisites, minimum GPA or grade requirements, standardized test scores (if applicable), language proficiency requirements,
+                    and any additional materials or documents that need to be submitted as part of the application process.
+                     Make sure to include any specific deadlines or application timelines.</p>
+                  <p><h3>Faculty and Research Opportunities:</h3>  Highlight the expertise and qualifications of the faculty members involved in 
+                    teaching and mentoring students in the MPhil and MSc programs. Emphasize any research opportunities, collaborations, or projects that students can be a part of
+                     during their studies. This section should showcase the academic and research environment that students can benefit from.
+                   </p>
+                   <p><h3> Student Support and Resources:</h3> Explain the support services and resources available to students in the MPhil and MSc programs.
+                     This can include academic advising, career services, research labs or facilities, libraries, and any other resources that contribute to the overall student experience.
+                    </p>
+                    
+                   <p><h3> FAQs and Contact Information::</h3>  Address frequently asked questions related to the MPhil and MSc programs. 
+                    This can include questions about scholarships, financial aid, housing options, or any other common inquiries. Additionally, provide contact
+                     information or a contact form for prospective students to reach out with specific queries.
+                   </p>
+
+                   <h1 style="text-align: center;">Undergraduate Program Page</h1>
+                   <p>  Undergraduate Program page of the website is a dedicated section that provides comprehensive information about the undergraduate programs offered by
+                     your institution or organization. This page serves as a hub for prospective students to learn about the available undergraduate degrees, their curriculum,
+                      admission requirements, and other relevant details.
+                    </p>
+                    <div class="image-container">
+                      <img src="c:\Users\AMG MONI\Pictures\un1.jpeg" alt="Left Image">
+                      <img src="c:\Users\AMG MONI\Pictures\un2.jpeg" alt="Right Image">
+                      </div>
+                      <p><h3> Program Overview:</h3>  Start by providing a clear and concise overview of the undergraduate programs offered. 
+                        Explain the types of degrees available (e.g., Bachelor of Arts, Bachelor of Science), the academic disciplines or majors offered, 
+                        and the overall objectives of the programs. This section should capture the attention of prospective students and highlight
+                         the unique aspects of your undergraduate offerings.</p>
+                        <p><h3>Curriculum and Courses:</h3>  Outline the structure of the undergraduate programs. Provide an overview of the core curriculum requirements, 
+                          major-specific courses, elective options, and any available minors or specializations. Include information about the duration of the programs, credit requirements,
+                           and any practical or experiential learning opportunities. This section should give prospective students a clear understanding of the academic content
+                            they can expect to encounter.</p>
+                          <p><h3> Career Prospects:</h3> Discuss the potential career paths and opportunities that graduates of the undergraduate programs can pursue. 
+                            Highlight the industries, sectors, or job roles where graduates typically find employment. Include information about alumni success stories or notable
+                             achievements to showcase the value and impact of your undergraduate programs.</h3>
+                           </p>
+                           <p><h3>Application Process:</h3>  Provide a step-by-step guide on how prospective students can apply to the undergraduate programs. 
+                            Include information about the application submission method, required documents, interview process (if applicable), and any application fees.
+                             This section should be clear and user-friendly to assist potential applicants.
+                           </p>
+
+                           <h1 style="text-align: center;">Registration Page</h1>
+                   <p>  The Registration Courses page of the website is a dedicated section that provides information and resources for students to register for their desired courses. 
+                    This page serves as a central hub where students can access course listings, search for available classes, and complete the registration process.
+                    </p>
+                    <div class="image-container">
+                      <img src="c:\Users\AMG MONI\Pictures\r1.jpeg" alt="Left Image">
+                      <img style="margin-left: 5%;" src="c:\Users\AMG MONI\Pictures\r2.jpeg" alt="Right Image">
+                      </div>
+                      <p><h3> Course Listings:</h3>  Provide a comprehensive list of courses offered by your institution or organization. Organize the courses by department, discipline,
+                         or academic program for easy navigation. Include course codes, titles, descriptions, and any prerequisites or restrictions. This section should give students an overview
+                          of the available courses they can choose from.</p>
+                       Use concise and engaging language to capture the attention of visitors and make them interested in learning more.</p>
+                      <p><h3> Course Availability:</h3>  Display the availability status of each course, indicating whether it is open for registration, closed, or has limited seats remaining.
+                         This information helps students make informed decisions when selecting their courses.</p>
+                        <p><h3>Course Search Functionality:</h3>  Implement a search feature that allows students to search for specific courses based on keywords, course codes,
+                           or other relevant criteria. This feature enhances usability and enables students to quickly find the courses they are interested in.
+                         </p>
+                         <p><h3>Course Details and Syllabi:</h3> Include additional details about each course, such as the instructor's name,
+                           office hours, and syllabus. Syllabi may contain information on course objectives, learning outcomes, assignments, and grading criteria.
+                            Providing this information allows students to gain a deeper understanding of the course content and requirements.
+                          </p>
+                          <p><h3>Registration Process:</h3>  Explain the step-by-step process for registering courses.
+                             Include instructions on how to add or drop courses, deadlines for registration, and any specific requirements or forms that need to be completed.
+                              This section should guide students through the registration process and provide clarity on important dates and procedures.
+                           </p>
+                           <h1 style="text-align: center;">Learning Development</h1>
+                           <p>  Building a website provides a comprehensive learning experience that covers various aspects of web development, design, and related disciplines.
+                             The knowledge and skills gained can be valuable for future projects and opportunities in the field.
+                            </p>
+                            <P>This project has helped in my Learning skill amd improve in various areas such<br>
+                              <li>HTML (Hypertext Markup Language)</li>
+                               <li> CSS (Cascading Style Sheets)</li>
+                               <li>JavaScript</li>
+                               <li>Responsive design</li>
+                               <li> Web accessibility</li>
+                               <li>Website optimization</li>
+                               <li>Content management systems (CMS)</li>
+                               <li>Version control (e.g., Git)</li>
+                            </P>
+                            </div>
+                            </div>
+
+                            
+                            <div class="footer"> 
+                              <ul class="academic-list">
+                           <div class="academic" style="font-size:20px;"> ACADEMIC</div>  
+                        <li><a href="#"> Undergraduate Courses</a></li>
+                    <li><a href="#"> Graduate Courses(MPhil Computer Science)</a></li>
+                <li><a href="#"> Graduate Courses(MSc Computer Science)</a></li>
+            <li><a href="#"> Graduate Courses(PhD)</a></li>
+        <li><a href="#"> Academic Calendar</a></li>
+    <li><a href="#">Placements For Level 200 Students</a></li>
+    <li><a href="#"> Student Complaint Form</a></li>
+    <ul><h3>NEWS-LETTER</h3></ul>
+ </ul>
+ <hi style="margin-top: 30%; margin-left:-25%;"> Stay update with our latest</hi>
+ 
+  
+<ul class="academic-list2" style="margin-left: 7%;">
+<div class=" Admissions"  style="font-size:20px;"> ADMISSIONS</div>
+    <li><a href="#">Undergraduate</a></li>
+      <li><a href="#"> Graduate</a></li>
+        <li><a href="#" >International Students</a></li>
+          <li><a href="#">Entry Requirements</a></li>
+            <li><a href="#">Contact Us</a></li>
+              </ul>
+              
+     
+
+               <ul class="academic-list3" style="margin-left: 10%;">
+            <div class=" Research"  style="font-size:20px;">RESEARCH</div>
+       <li><a href="#">Research at DCS</a></li>
+    <li><a href="#"> Research Impact</a></li>
+<li><a href="#"> Libraries</a></li>
+</ul>
+
+<ul class="academic-list3" style="margin-left:5%;">
+    <div class=" About The Department"  style="font-size:20px;">ABOUT THE DEPARTMENT</div>
+        <li><a href="#">Introducing DCS</a></li>
+            <li><a href="#"> Head of Department's office</a></li>
+                <li><a href="#"> Faculty</a></li>
+                   <li><a href="#"> Events</a></li>
+                         </ul>
+
+                         <div style="margin-top: 30%; margin-left:-70%;">
+                          <ul>
+                            <div>CONTACT US</div>
+                            <li>Phone & Email</li>
+                            <li>+233(0)501382035</li>
+                            <li>+233(0)559145698</li>
+                            <li>dcs@ug.edu.gh</li>
+                          </ul>
+                        </div>   
+                        <div style="margin-top: 30%; margin-left: 15%;">
+                          <ul>
+                            <div>LOCATION</div>
+                            <li>University Of Ghana, Legon Campus</li>
+                            <li>Opposite Mathematics Department </li>
+                          </ul> 
+                          </div> 
+                          <ul>
+
+                          <div id="under-head"> 
+                            <nav class="under-score">
+                              <ul>
+                                <li><a href="#home" margin-left="5px">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#faculty">FACULTY</a></li>
+                                <li><a href="#research">RESEARCH GROUPS</a></li>
+                                <li><a href="#news&events">NEWS & EVENTS</a></li>
+                              
+                                <li><a href="#">
+                                  <form action="/search" method="GET">
+                                    <input type="text" placeholder="Search..." name="search">
+                                    <button type="submit">
+                                      <img src="https://cdn-icons-png.flaticon.com/512/6905/6905713.png "style="margin-left:-20%"; height="12px" width="20px" alt="Search">
+                                    </button>
+                                  </form>
+                              </a></li>
+                            </nav>
+                          </ul>
+                          </div>
+
+                            
+
+ 
+
+      
+
+   </div>
+
+
+  
+ </body>
+ </html>
